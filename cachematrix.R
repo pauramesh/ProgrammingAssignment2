@@ -31,3 +31,18 @@ cacheSolve <- function(x, ...) {
   
   ## Return a matrix that is the inverse of 'x'
 }
+
+
+
+# ###............................................................................
+# Testing the function 
+a<-- matrix(1:4, nrow=2, byrow=TRUE)
+# Return innverse of the matrix without using the function
+solve(a)
+
+a1<- makeCacheMatrix(a)
+# Return inverse from computation (using the function)
+cacheSolve(a1)
+
+# Return inverse from cache
+cacheSolve(a1)
